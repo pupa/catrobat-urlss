@@ -111,7 +111,6 @@
                 (3, '2012-04-29 17:15:47', 1, 3, 1, 'AT'),
                 (3, '2012-05-09 20:25:03', 3, 1, 5, 'DE'),
                 (3, '2012-05-20 10:15:23', 3, 4, 4, 'AT'),
-                (4, '2012-06-01 10:15:23', 3, 4, 5, 'UK')";
                 (4, '2012-06-01 10:15:23', 3, 4, 5, 'GB')";
                 
         foreach ($insert_tables as $table_name => $query) {
@@ -127,6 +126,7 @@
     // print all messages
     print_r($success_msg);
     print_r($error_msg);
+    
     
     // close connection to DB
     pg_close($connection);
