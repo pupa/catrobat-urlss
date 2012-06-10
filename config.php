@@ -19,9 +19,11 @@
 	
 	// PostgreSQL DB user name
 	$user = 'postgres';
+	$user = 'catrobat';
 	
 	// PostgreSQL DB password
 	$password = 'postgre123';
+	$password = 'catrobat123';
  		  	
 /*
  * URL shortening settings

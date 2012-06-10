@@ -16,7 +16,6 @@
     $drop_tables['PLATFORM'] = 'DROP TABLE PLATFORM';
     $drop_tables['BROWSER'] = 'DROP TABLE BROWSER';
     
-    // execute queries
     foreach ($drop_tables as $table_name => $query) {
         $result = pg_query($query);
         if ($result) {

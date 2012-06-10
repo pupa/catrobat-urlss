@@ -48,7 +48,6 @@
 			
 	$create_table_counter = 0;
 	
-	// execute queries
 	foreach ($create_tables as $table_name => $query) {
 		$result = pg_query($query);
 		if ($result) {
@@ -113,6 +112,7 @@
                 (3, '2012-05-09 20:25:03', 3, 1, 5, 'DE'),
                 (3, '2012-05-20 10:15:23', 3, 4, 4, 'AT'),
                 (4, '2012-06-01 10:15:23', 3, 4, 5, 'UK')";
+                (4, '2012-06-01 10:15:23', 3, 4, 5, 'GB')";
                 
         foreach ($insert_tables as $table_name => $query) {
             $result = pg_query($query);
