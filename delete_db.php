@@ -29,6 +29,7 @@
     print_r($success_msg);
     print_r($error_msg);
     
+    
     // close connection to DB
     pg_close($connection);
 ?>
