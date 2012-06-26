@@ -9,51 +9,40 @@
  */
  
  	// PostgreSQL DB hostname
- 	$host = 'localhost';
+ 	$host = "localhost";
 	
 	// PostgreSQL DB portnumber
 	$port = 5432;
 	
 	// The name of the database for the Catrobat URL shortening service
-	$database = 'CatrobatURLSS';
+	$database = "CatrobatURLSS";
 	
 	// PostgreSQL DB user name
-	$user = 'catrobat';
+	$user = "catrobat";
 	
 	// PostgreSQL DB password
-	$password = 'catrobat123';
- 		  	
+	$password = "catrobat123";
+    
 /*
- * URL shortening settings
+ * Webservice settings
  */
- 
-	/* URL shortening method: 3 or 4 */
-	//define('URL_CONVERT', 3);
-	/*
-	 * 3: generate case sensitive keywords (ie: a3m or a3M)
-	 * 4: generate case sensitive keywords (ie: 27hj or 27Hj)
-	 */
-	 
-	/* Duplicates allowed?! */
-	//define('URL_DUPLICATE', TRUE)
-	/*
-	 * TRUE: store every new URL without an check
-	 * FALSE: proof, if the new URL already exists in the DB -> if yes: return the existing short URL
-	 * /
+     
+    // location of the WSDL-File
+    $wsdl = "http://localhost/~Bernhard/WebService.wsdl";
+    
+    // Client options
+    $client_options = array("trace" => "1");
 	 
 /*
  * Site options
  */
- 
-	/* Catrobat installation URL */
-	//define('SITE','http://catrob-at.ist.tugraz.at')
 	
 	/*
 	 * Maybe we will also define username(s) and password(s) here 
 	 * allowed to access the admin site ie:
 	 */
 	 $user_password = array(
-	 	'admin' => 'password',
-		'username' => 'passme'   // you can have more one ore more 'login' => 'password' lines
+	 	"admin" => "password",
+		"username" => "passme"   // you can have more one ore more 'login' => 'password' lines
 		);
 ?>

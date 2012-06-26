@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<definitions name='URLShortener'
+	targetNamespace='http://localhost/~Bernhard'
+	xmlns:tns='http://localhost/~Bernhard'
+	xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/'
+	xmlns:xsd='http://www.w3c.org/2001/XMLSchema'
+	xmlns:soapenc='http://schemas.xmlsoap.org/soap/encoding'
+	xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+	xmlns='http://schemas.xmlsoap.org/wsdl/'>
+	
+<message name='getURLRequest'>
+	<part name='longurl' type='xsd:string' />
+</message>
+<message name='getURLResponse'>
+	<part name='Result' type='xsd:string' />
+</message>
+
+<portType name='getURLPortType'>
+	<operation name='getURL'>
+		<input message='tns:getURLRequest' />
+		<output message='tns:getURLResponse' />
+	</operation>
+</portType>
+
+<binding name='getURLBinding' type='tns:getURLPortType'>
+  <soap:binding style='rpc'
+    transport='http://schemas.xmlsoap.org/soap/http'/>
+  <operation name='getURL'>
+    <soap:operation soapAction='urn:URLShortener#getURL'/>
+    <input>
+      <soap:body use='encoded' namespace='urn:URLShortener'
+        encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+    </input>
+    <output>
+      <soap:body use='encoded' namespace='urn:URLShortener'
+        encodingStyle='http://schemas.xmlsoap.org/soap/encoding/'/>
+    </output>
+  </operation>
+</binding>
+
+<service name='getURLService'>
+	<port name='getURLPort' binding='getURLBinding'>	
+		<soap:address location='http://localhost/~Bernhard/server.php' />
+	</port>
+</service>
+</definitions>
