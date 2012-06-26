@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: #B7B7B7;
+	font-family: "Arial";
+	color: #333;
+}
+
+
+
+
+.container {
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+	border: 20px solid #FFF;
+	background-color: #FFF;
+}
+
+.footer {
+	background-color: #F5F5F5;
+	padding-top: 3px;
+	padding-right: 10px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #C3C3C3;
+	height: 20px;
+	text-align: right;
+}
+
+
+
+.table {
+	margin-bottom: 10px;
+}
+
+
+.country_chart {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.browser_bar_chart, .platform_column_charts, .total_clicks_alltime_line_chart, .total_clicks_last24h_line_chart, .total_clicks_last7d_line_chart, .total_clicks_last30d_line_chart   {
+  width: 50%;
+  float: left;
+}
+
+
+#url_table {
+	background-color: #FFFFFF;
+	border: 2px solid #C3C3C3;
+}
+
+#url_table td {
+	background-color: #F5F5F5;
+	border: 1px solid #FFFFFF;
+}
+
+h1 {
+	color: #6D9229;
+}
+
+h2 {
+	color: #465E1A;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+h4 {
+	color: #F00;
+	font-size: 0.9em;
+	font-weight: lighter;
+}
+
+a:link {
+	color:#7CC03F;
+	text-decoration:none; 
+}
+a:visited {
+	 color:#7CC03F;
+	 text-decoration:none; 
+}
+a:focus {
+	 color:#7CC03F;
+	 text-decoration:none; 
+}
+a:hover {
+	color:#517C29;
+	text-decoration:none; 
+}
+a:active {
+	 color:#7CC03F;
+	 text-decoration:none; 
+}
